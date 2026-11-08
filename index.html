@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="사이트 후원, 신고, 문의 및 건의사항">
+  <title>Blue Harbor | 공식 홈페이지</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#home"><span class="brand-mark">B</span><span>BLUE HARBOR<small>COMMUNITY</small></span></a>
+    <button class="menu-toggle" id="menuToggle" aria-label="메뉴 열기">☰</button>
+    <nav id="nav">
+      <a href="#home">홈</a><a href="#support">후원</a><a href="#report">신고·문의</a>
+      <a href="#suggest">건의사항</a><a href="#contact">일반 문의</a>
+      <a class="admin-link" href="admin.html">관리자</a>
+    </nav>
+  </header>
+
+  <main id="home">
+    <section class="hero">
+      <div class="eyebrow"><span class="dot"></span> COMMUNITY SERVICE</div>
+      <h1>함께 만드는<br><em>더 나은 공간.</em></h1>
+      <p>서비스 이용 중 필요한 도움을 요청하거나,<br class="desktop"> 더 좋은 공간을 위한 의견을 남겨주세요.</p>
+      <div class="hero-actions"><a class="btn primary" href="#contact">문의 남기기 <span>↗</span></a><a class="btn ghost" href="#support">운영 후원 안내</a></div>
+      <div class="hero-foot"><span>OPEN COMMUNICATION</span><span>EST. 2026</span></div>
+    </section>
+
+    <section class="section">
+      <div class="section-heading"><div><div class="eyebrow">WHAT YOU NEED</div><h2>무엇을 도와드릴까요?</h2></div><p>아래 메뉴에서 필요한 항목을 선택해 주세요.</p></div>
+      <div class="feature-grid">
+        <a class="feature-card" href="#support"><span class="icon">♡</span><span class="card-index">01 / SUPPORT</span><h3>운영 후원</h3><p>사이트 운영을 응원하고 싶다면 후원 안내를 확인해 주세요.</p><b>후원 안내 보기 ↗</b></a>
+        <a class="feature-card" href="#report"><span class="icon">!</span><span class="card-index">02 / REPORT</span><h3>신고·문제 제보</h3><p>규칙 위반이나 서비스 이용 중 발생한 문제를 알려주세요.</p><b>신고 접수하기 ↗</b></a>
+        <a class="feature-card" href="#suggest"><span class="icon">✳</span><span class="card-index">03 / IDEA</span><h3>건의사항</h3><p>새로운 기능이나 개선 아이디어를 자유롭게 제안해 주세요.</p><b>건의 남기기 ↗</b></a>
+        <a class="feature-card" href="#contact"><span class="icon">↗</span><span class="card-index">04 / CONTACT</span><h3>일반 문의</h3><p>그 밖의 질문이나 도움이 필요한 내용을 남겨주세요.</p><b>문의하기 ↗</b></a>
+      </div>
+    </section>
+
+    <section class="section split-section" id="support">
+      <div><div class="eyebrow">01 / SUPPORT</div><h2>운영 후원</h2><p class="muted">보내주시는 응원은 서비스 운영과 개선을 위한 참고로 사용됩니다. 후원은 자율이며, 후원 여부에 따라 서비스 이용에 차이가 생기지 않습니다.</p></div>
+      <div class="panel">
+        <div class="panel-top"><span>TRANSFER INFORMATION</span><span class="pill">OPTIONAL</span></div>
+        <h3>계좌이체 안내</h3>
+        <p class="muted small">후원 계좌 정보는 운영자 확인 후 이곳에 공개해 주세요.</p>
+        <div class="bank-row"><span>은행</span><strong>[은행명 입력]</strong></div>
+        <div class="bank-row"><span>예금주</span><strong>[예금주 입력]</strong></div>
+        <div class="bank-row"><span>계좌번호</span><strong>[계좌번호 입력]</strong></div>
+        <p class="notice">※ 계좌 정보는 공개 전 반드시 계좌 명의자 및 보호자와 확인하세요. 개인정보가 포함된 계좌를 무단으로 게시하지 마세요.</p>
+      </div>
+    </section>
+
+    <section class="section form-section" id="report">
+      <div class="section-heading"><div><div class="eyebrow">02 / REPORT</div><h2>신고·문제 제보</h2></div><p>긴급한 위험이나 범죄 신고는 이 사이트가 아닌 해당 기관에 직접 연락해 주세요.</p></div>
+      <form class="request-form" data-kind="신고">
+        <label>신고 유형<select name="category" required><option value="">선택해 주세요</option><option>규칙 위반</option><option>부적절한 콘텐츠</option><option>괴롭힘·분쟁</option><option>기술적 오류</option><option>기타</option></select></label>
+        <label>내용<textarea name="message" rows="5" minlength="10" maxlength="3000" placeholder="상황을 구체적으로 적어주세요. (10~3000자)" required></textarea></label>
+        <label>회신용 이메일 (선택)<input type="email" name="email" placeholder="example@email.com"></label>
+        <label class="check"><input type="checkbox" name="agree" required> 접수 내용 처리에 필요한 범위에서 정보가 사용되는 것에 동의합니다.</label>
+        <button class="btn primary" type="submit">신고 접수하기 <span>↗</span></button><p class="form-status" aria-live="polite"></p>
+      </form>
+    </section>
+
+    <section class="section form-section" id="suggest">
+      <div class="section-heading"><div><div class="eyebrow">03 / IDEA</div><h2>건의사항</h2></div><p>작은 의견도 서비스 개선에 도움이 됩니다.</p></div>
+      <form class="request-form" data-kind="건의">
+        <label>건의 제목<input name="title" maxlength="100" placeholder="건의 제목" required></label>
+        <label>건의 내용<textarea name="message" rows="5" minlength="5" maxlength="3000" placeholder="원하는 기능이나 개선점을 적어주세요." required></textarea></label>
+        <label>회신용 이메일 (선택)<input type="email" name="email" placeholder="example@email.com"></label>
+        <button class="btn primary" type="submit">건의 제출하기 <span>↗</span></button><p class="form-status" aria-live="polite"></p>
+      </form>
+    </section>
+
+    <section class="section form-section" id="contact">
+      <div class="section-heading"><div><div class="eyebrow">04 / CONTACT</div><h2>일반 문의</h2></div><p>서비스 이용과 관련된 질문을 남겨주세요.</p></div>
+      <form class="request-form" data-kind="일반 문의">
+        <label>문의 제목<input name="title" maxlength="100" placeholder="문의 제목" required></label>
+        <label>문의 내용<textarea name="message" rows="5" minlength="5" maxlength="3000" placeholder="문의 내용을 적어주세요." required></textarea></label>
+        <label>회신용 이메일 (선택)<input type="email" name="email" placeholder="example@email.com"></label>
+        <button class="btn primary" type="submit">문의 보내기 <span>↗</span></button><p class="form-status" aria-live="polite"></p>
+      </form>
+    </section>
+  </main>
+
+  <footer><a class="brand" href="#home"><span class="brand-mark">B</span><span>BLUE HARBOR<small>COMMUNITY</small></span></a><p>© 2026 BLUE HARBOR. All rights reserved.</p><a href="admin.html">관리자 로그인</a></footer>
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <script src="config.js"></script><script src="app.js"></script>
+</body>
+</html>
